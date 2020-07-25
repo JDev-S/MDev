@@ -26,29 +26,29 @@
 		<!-- Start Favicon -->
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
 		<!-- END Favicon -->
 		
 		
 		
 
 		<!-- Uikit Framework -->
-		<link rel="stylesheet" href="css\uikit.min.css">
+		<link rel="stylesheet" href="\css\uikit.min.css">
 		
 		<!-- Bootstrap Framework -->
 		<link rel="stylesheet" href="css\bootstrap.min.css">
 		
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="css\font-awesome.min.css">
+		<link rel="stylesheet" href="\css\font-awesome.min.css">
 		
 		<!-- Main Stylesheet -->
-		<link rel="stylesheet" href="css\style.css">
+		<link rel="stylesheet" href="\css\style.css">
 		
 		<!-- Responsive -->
-		<link rel="stylesheet" href="css\responsive.css">
-		
+		<link rel="stylesheet" href="\css\responsive.css">
+		@yield('css')
 		
 		
 		<!--[if lt IE 9]>
@@ -80,7 +80,7 @@
 					<div class="uk-navbar-left padding-left-two-percent">
 					
 						<!-- Logo Image -->
-						<a class="uk-navbar-item uk-logo " href="#" data-uk-scroll=""><img class="width-15px" src="images\logo-dark.png" alt=""></a>
+						<a class="uk-navbar-item uk-logo " href="#" data-uk-scroll=""><img class="width-15px" src="\images\logo-dark.png" alt=""></a>
 					
 					</div>
 					<!-- End Navigation Left Side -->
@@ -97,7 +97,7 @@
 							<!-- Link -->
 							<li>
 							
-								<a class="uk-visible@l" href="#" data-uk-scroll="">Inicio</a>
+								<a class="uk-visible@l" href="/" >Inicio</a>
 
 							</li>
 							
@@ -105,20 +105,20 @@
 							<!-- Link -->
 							<li>
 							
-								<a class="uk-visible@l" href="#services" data-uk-scroll="">Services</a>
+								<a class="uk-visible@l" href="#services" >Servicios</a>
 								
 		
 							</li>
 							
 							
 							<!-- Link -->
-							<li>
+							<!--<li>
 							
 								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="#">Portfolio</a>
 								
 								<div class="bg-white" data-uk-dropdown="">
 									
-									<!-- Dropdown Links -->
+								
 									<ul class="uk-nav uk-navbar-dropdown-nav">
 				
 										<li><a href="portfolio-col-2-full.html">Column 02 Full</a></li>
@@ -129,17 +129,17 @@
 										<li><a href="portfolio-col-4-boxed.html">Column 04 Boxed</a></li>
 										
 									</ul>
-									<!-- End Dropdown Links -->
+									
 									
 								</div>
 
-							</li>
+							</li>-->
 							
 							
 							<!-- Link -->
 							<li>
 							
-								<a class="uk-visible@l" href="#pricing" data-uk-scroll="">Pricing</a>
+								<a class="uk-visible@l" href="/acerca_de" >Acerca de </a>
 								
 		
 							</li>
@@ -148,13 +148,13 @@
 							
 							
 							<!-- Link -->
-							<li>
+							<!--<li>
 							
 								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="#">Blog</a>
 								
 								<div class="bg-white" data-uk-dropdown="">
 									
-									<!-- Dropdown Links -->
+									
 									<ul class="uk-nav uk-navbar-dropdown-nav">
 				
 										<li><a href="blog.html">Blogs</a></li>
@@ -162,21 +162,21 @@
 										<li><a href="blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
 										
 									</ul>
-									<!-- End Dropdown Links -->
+									
 									
 								</div>
 
-							</li>
+							</li>-->
 	
 	
 							<!-- Link -->
-							<li>
+							<!--<li>
 							
 								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="#">Pages</a>
 								
 								<div class="bg-white" data-uk-dropdown="">
 									
-									<!-- Dropdown Links -->
+									
 									<ul class="uk-nav uk-navbar-dropdown-nav">
 				
 										<li><a href="page-about.html">About</a></li>
@@ -191,16 +191,16 @@
 										<li><a href="page-sign-in.html">Sign in</a></li>
 										
 									</ul>
-									<!-- End Dropdown Links -->
+									
 									
 								</div>
 
-							</li>
+							</li>-->
 							
 							<!-- Link -->
 							<li>
 							
-								<a class="uk-visible@l" href="/contacto" data-uk-scroll="">Contacto</a>
+								<a class="uk-visible@l" href="/contacto" >Contacto</a>
 							</li>							
 
 							
@@ -248,7 +248,7 @@
 		<!-- End Loading Screen -->
 		
 		
-		
+		<!---MOVIL--->
 		<!-- Off-Canvas Navigation -->
 		<div id="offcanvas-nav" data-uk-offcanvas="mode: push; overlay: true; esc-close: true;">
 		
@@ -259,12 +259,12 @@
 				<ul class="uk-nav-default uk-nav-parent-icon text-left" data-uk-nav="">
 				
 					
-					<li class="margin-top-20px"><a class="uk-navbar-item uk-logo" href="#" data-uk-scroll=""><img class="width-25px" src="images\logo-dark.png" alt=""></a></li>
+					<li class="margin-top-20px"><a class="uk-navbar-item uk-logo" href="/" data-uk-scroll=""><img class="width-25px" src="images\logo-dark.png" alt=""></a></li>
 
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
+					<li class="margin-bottom-10px">
 					
-						<a href="#" data-uk-scroll=""><span class="text-gray-dark padding-bottom-20px">Home</span></a>
+						<a href="/" ><span class="text-gray-dark padding-bottom-20px">Inicio</span></a>
 						
 						
 					</li>
@@ -273,20 +273,20 @@
 					
 					
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
+					<li class=" margin-bottom-10px">
 					
-						<a href="#services" data-uk-scroll=""><span class="text-gray-dark padding-bottom-20px">Services</span></a>
+						<a href="/servicios" ><span class="text-gray-dark padding-bottom-20px">Servicios</span></a>
 
 					</li>
 					<!-- End Link -->
 					
 					
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
+					<!--<li class="uk-parent margin-bottom-10px">
 					
 						<a href="#"><span class="text-gray-dark padding-bottom-20px">Portfolio <span class="margin-left-5px text-red" data-uk-icon="icon: minus; ratio: 1"></span></span></a>
 						
-						<!-- Dropdown -->
+						
 						<ul class="uk-nav-sub">
 
 						
@@ -298,30 +298,30 @@
 							<li><a href="portfolio-col-4-boxed.html">Column 04 Boxed</a></li>
 	
 						</ul>
-						<!-- End Dropdown -->
+						
+						
+					</li>-->
+					<!-- End Link -->
+					
+					
+					<!-- Link -->
+					<li class=" margin-bottom-10px">
+					
+						<a href="/acerca_de" ><span class="text-gray-dark padding-bottom-20px">Acerca de</span></a>
 						
 					</li>
 					<!-- End Link -->
 					
 					
-					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
-					
-						<a href="#pricing" data-uk-scroll=""><span class="text-gray-dark padding-bottom-20px">Pricing</span></a>
-						
-					</li>
-					<!-- End Link -->
-					
-					
 					
 					
 					
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
+					<!--<li class="uk-parent margin-bottom-10px">
 					
 						<a href="#"><span class="text-gray-dark padding-bottom-20px">Blog <span class="margin-left-5px text-red" data-uk-icon="icon: minus; ratio: 1"></span></span></a>
 						
-						<!-- Dropdown -->
+						
 						<ul class="uk-nav-sub">
 
 						
@@ -330,19 +330,19 @@
 							<li><a href="blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
 	
 						</ul>
-						<!-- End Dropdown -->
 						
-					</li>
+						
+					</li>-->
 					<!-- End Link -->
 					
 					
 					
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
+					<!--<li class="uk-parent margin-bottom-10px">
 					
 						<a href="#"><span class="text-gray-dark padding-bottom-20px">Pages <span class="margin-left-5px text-red" data-uk-icon="icon: minus; ratio: 1"></span></span></a>
 						
-						<!-- Dropdown -->
+						
 						<ul class="uk-nav-sub">
 
 						
@@ -358,27 +358,23 @@
 							<li><a href="page-sign-in.html">Sign in</a></li>
 	
 						</ul>
-						<!-- End Dropdown -->
 						
-					</li>
+						
+					</li>-->
 					<!-- End Link -->
 					
 					
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
+					<li class=" margin-bottom-10px">
 					
-						<a href="#contact" data-uk-scroll=""><span class="text-gray-dark padding-bottom-20px">Contact</span></a>
+						<a href="/contacto" ><span class="text-gray-dark padding-bottom-20px">Contacto</span></a>
 
 					</li>
 					<!-- End Link -->
 					
 					
 					<!-- Link -->
-					<li class="uk-parent margin-bottom-10px">
-					
-						<a href="page-sign-in.html"><span class="text-gray-dark padding-bottom-20px">Sign In</span></a>
 
-					</li>
 					<!-- End Link -->
 	
 				</ul>
@@ -388,14 +384,7 @@
 				
 				<!-- Navigation Footer -->
 				<div class="nav-footer margin-top-50px">
-			
 
-					<!-- Off-Canvas Search -->
-					<form class="uk-search uk-search-default width-100 bg-black">
-						<a href="" class="uk-search-icon-flip text-white" data-uk-search-icon=""></a>
-						<input class="uk-search-input text-small text-white text-weight-500 no-border" type="search" placeholder="Search">
-					</form>
-					<!-- End Off-Canvas Search -->
 
 					<!-- Social Links for Off-Canvas Footer -->
 					<ul class="list-unstyled no-margin-bottom margin-top-20px">
@@ -409,8 +398,10 @@
 					<!-- End Social Links for Off-Canvas Footer -->
 
 					<!-- Copyright Information -->
-					<p class="no-margin-bottom margin-top-20px text-small text-gray-extra-dark text-weight-400">Copyright © 2019 of <a href="..\..\index.htm" target="_blank">templatemilk.</a></p>
-					<p class="no-margin-bottom text-small text-gray-dark text-weight-400 text-black">All rights reserved.</p>
+					<p class="no-margin-bottom margin-top-20px text-small text-gray-extra-dark text-weight-400">Copyright © <?php $hoy = getdate();   
+                            echo $hoy['year'];
+                    ?> <a href="/" target="_blank">MDev</a></p>
+					<p class="no-margin-bottom text-small text-gray-dark text-weight-400 text-black">Todos los derechos reservados.</p>
 					<!-- End Copyright Information -->
 			
 				</div>
@@ -422,7 +413,7 @@
 		</div>
 		<!-- End Off-Canvas Navigation -->
 		
-		
+		<!--FIN DEL MOVIL-->
 		
 		<!-- Home -->
 		<div data-uk-slider="">
@@ -497,31 +488,24 @@
 					<p><a href="#" class="display-inline-block" data-uk-scroll=""><img class="width-25px" src="images\logo-dark.png" alt=""></a></p>
 
 					<!-- Links -->
-					<a class="poppins text-small text-weight-400 text-gray-dark right-border border-1 border-color-regular-gray padding-right-10px" href="#">Terms & Conditions</a>
-					<a class="poppins text-small text-weight-400 text-gray-dark padding-left-10px" href="#">Privacy Policy</a>
-					
-					<!-- Text -->
-					<p class="text-medium text-weight-400 width-100 margin-top-15px line-height-30">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id.</p>
-					
-		
-					<a class="btn btn-large btn-red border-radius-50 sm-display-table sm-margin-left-right-auto" href="#">Get in Touch</a>
-					
+				 <iframe frameborder="0" style="border:0; height:350px; width:96%; " src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDEdsq6YzeLi6-XTHgI5c5hTkN9C68ZCrc&q=place_id:ChIJV6DSkdmELIQRIL2TDZmP5I4" allowfullscreen=""></iframe>
+						
 				</div>
 				<!-- End Column -->
 				
 				<!-- Column -->
 				<div class="col-md-2 col-sm-6 col-xs-12 center-col md-margin-bottom-50px sm-text-center">
 				
-					<h6 class="text-weight-800 text-extra-large text-red">Sitemap</h6>
+					<h6 class="text-weight-800 text-extra-large text-red">Links rápidos</h6>
 			
 					<!-- Links -->
 					<ul class="list-unstyled no-margin-bottom">
 					
-						<li><a class="text-small poppins text-gray-dark" href="#">Home</a></li>
-						<li><a class="text-small poppins text-gray-dark" href="#">About</a></li>
-						<li><a class="text-small poppins text-gray-dark" href="#">Projects</a></li>
-						<li><a class="text-small poppins text-gray-dark" href="#">Stories</a></li>
-						<li><a class="text-small poppins text-gray-dark" href="#">Contact</a></li>
+						<li><a class="text-small poppins text-gray-dark" href="/">Inicio</a></li>
+						<li><a class="text-small poppins text-gray-dark" href="/servicios">Servicios</a></li>
+						<li><a class="text-small poppins text-gray-dark" href="/acerca_de">Acerca de</a></li>
+						<li><a class="text-small poppins text-gray-dark" href="/contacto">Contacto</a></li>
+						<!--<li><a class="text-small poppins text-gray-dark" href="#">Contact</a></li>-->
 					
 					</ul>
 					<!-- End Links -->
@@ -534,14 +518,14 @@
 				<div class="col-md-2 col-sm-6 col-xs-12 center-col md-margin-bottom-50px sm-text-center">
 				
 					<!-- Title -->
-					<h6 class="text-weight-800 text-extra-large text-red">Contact</h6>
+					<h6 class="text-weight-800 text-extra-large text-red">Datos de contacto</h6>
 
 					<!-- Links -->
 					<ul class="list-unstyled no-margin-bottom">
 					
-						<li class="margin-bottom-10px"><a class="text-small poppins text-gray-dark" href="#"><span class="text-red margin-right-5px" data-uk-icon="icon: location; ratio: 1"></span> 23, Jumbo Road, Manhattan, New York City.</a></li>
-						<li class="margin-bottom-10px"><a class="text-small poppins text-gray-dark" href="#"><span class="text-red margin-right-5px" data-uk-icon="icon: phone; ratio: 1"></span> +1 929 3098 114</a></li>
-						<li><a class="text-small poppins text-gray-dark" href="#"><span class="text-red margin-right-5px" data-uk-icon="icon: mail; ratio: 1"></span> contact@Mktop.com</a></li>
+						<li class="margin-bottom-10px"><a class="text-small poppins text-gray-dark" href="#"><span class="text-red margin-right-5px" data-uk-icon="icon: location; ratio: 1"></span> Paseo de los volcanes #127, Col.Las reynas</a></li>
+						<li class="margin-bottom-10px"><a class="text-small poppins text-gray-dark" href="#"><span class="text-red margin-right-5px" data-uk-icon="icon: phone; ratio: 1"></span> 464-112-4092</a></li>
+						<li><a class="text-small poppins text-gray-dark" href="#"><span class="text-red margin-right-5px" data-uk-icon="icon: mail; ratio: 1"></span> info@jdevs.com.mx</a></li>
 					
 					</ul>
 					<!-- End Links -->
@@ -595,10 +579,13 @@
 					<!-- Social Links for Footer -->
 					<ul class="list-unstyled text-right no-margin-bottom sm-text-center">
 					
-						<li class="display-inline-block margin-right-25px"><a class="text-medium text-white text-weight-700" href="#"><i class="fab fa-facebook"></i></a></li>
-						<li class="display-inline-block margin-right-25px"><a class="text-medium text-white text-weight-700" href="#"><i class="fab fa-twitter"></i></a></li>
-						<li class="display-inline-block margin-right-25px"><a class="text-medium text-white text-weight-700" href="#"><i class="fab fa-behance"></i></a></li>
-						<li class="display-inline-block"><a class="text-medium text-white text-weight-700" href="#"><i class="fab fa-dribbble"></i></a></li>
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-white text-weight-700" href="https://www.facebook.com/jdevsmx/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-white text-weight-700" href="https://twitter.com/JDevsmx" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-white text-weight-700" href="https://www.instagram.com/jdevs_mx/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        
+						<li class="display-inline-block"><a class="text-medium text-white text-weight-700" href="https://www.youtube.com/channel/UCFSNW9sMpg1ivRZIZ8K4YJw" target="_blank"><i class="fab fa-youtube"></i></a></li>
 					
 					</ul>
 					<!-- End Social Links for Footer -->
@@ -654,6 +641,7 @@
 
 		<!-- Custom Scripts -->
 		<script src="\js\custom.js"></script>
+        @yield('scripts')
 	
 	
 	</body>
